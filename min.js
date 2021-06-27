@@ -7198,7 +7198,7 @@ jukebox.Manager = function(e) {
                         this.panelIconsImage.draw(this.panelIconsRect.x + this.panelIconsOffset.x, this.panelIconsRect.y + this.panelIconsOffset.y), 
                         ig.system.context.textAlign = "center", 
                         ig.system.context.font = "bold 26px mainfont, Helvetica, Verdana", 
-                        ig.system.context.fillStyle = "#41734d", 
+                        ig.system.context.fillStyle = "#306a66", 
                         ig.system.context.fillText(this.control.coinsCollected, this.coinEndCountPos.x, this.coinEndCountPos.y),
                         window.currentScore = this.control.coinsCollected,        
                         ig.system.context.textAlign = "center", 
