@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
 
+@font-face {
+  font-family: volte;
+  src: url(VolteDevanagariLG-Semibold.ttf);
+}
+
 #fbLogin {
     position: relative;
     text-align: center;
@@ -222,6 +227,7 @@
 
 .leaderboard-results-header thead th {
   padding: 10px 16px 0px 16px;
+  font-famil: volte;  
   color:#fff;
   font-size:12px;
   font-weight:bold;
@@ -252,6 +258,7 @@
 }
 
 .leaderboard-results thead th {
+  font-famil: volte;
   padding: 0px 16px 0px 16px;
   color: #1d3d3c;
   font-size: 10px;
