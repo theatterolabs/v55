@@ -229,7 +229,7 @@
   padding: 10px 16px 0px 16px;
   font-famil: volte;  
   color:#fff;
-  font-size:12px;
+  font-size:14px;
   font-weight:bold;
   background-color: #1d3d3c; 
   
@@ -259,9 +259,9 @@
 
 .leaderboard-results thead th {
   font-famil: volte;
-  padding: 0px 16px 0px 16px;
+  padding: 0px 2px 0px 16px;
   color: #1d3d3c;
-  font-size: 10px;
+  font-size: 14px;
   background-color: #1d3d3c; 
   
   
