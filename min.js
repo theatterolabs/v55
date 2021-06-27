@@ -6799,7 +6799,7 @@ jukebox.Manager = function(e) {
             bgImage: new ig.Image("media/graphics/game/backgrounds/mainbg.jpg"),
             titleImage: new ig.Image("media/graphics/game/backgrounds/maintitle.png"),
             time: 1,
-            playButtonAnim: new ig.Animation(new ig.AnimationSheet("media/graphics/game/ui/mainmenu/playgame.png", 110, 64), 0, [0, 1, 2]),
+            playButtonAnim: new ig.Animation(new ig.AnimationSheet("media/graphics/game/ui/mainmenu/playgame.png", 150, 64), 0, [0, 1, 2]),
             playButtonPos: {
                 x: 0,
                 y: 590
@@ -6807,7 +6807,7 @@ jukebox.Manager = function(e) {
             playButtonRect: {
                 x: -55,
                 y: -32,
-                w: 110,
+                w: 150,
                 h: 64
             },
             playButtonOffset: {
@@ -6969,14 +6969,14 @@ jukebox.Manager = function(e) {
                 x: 0,
                 y: 0
             },
-            restartSheet: new ig.AnimationSheet("media/graphics/game/ui/game/restart.png", 60, 60),
+            restartSheet: new ig.AnimationSheet("media/graphics/game/ui/game/restart.png", 100, 50),
             restartAnimUp: null,
             restartAnimDown: null,
             restartAnim: null,
             restartEndRect: {
                 x: 270,
                 y: 450,
-                w: 60,
+                w: 100,
                 h: 60
             },
             restartEndOffset: {
@@ -7050,8 +7050,8 @@ jukebox.Manager = function(e) {
             gameOverTitleRect: {
                 x: 153,
                 y: 131,
-                w: 333,
-                h: 54
+                w: 300,
+                h: 85
             },
             gameOverTitleOffset: {
                 x: 0,
