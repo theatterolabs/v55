@@ -6811,7 +6811,7 @@ jukebox.Manager = function(e) {
                 h: 64
             },
             playButtonOffset: {
-                x: 0,
+                x: -1,
                 y: 0
             },
             playButtonAlpha: 1,
