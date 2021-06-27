@@ -6811,7 +6811,7 @@ jukebox.Manager = function(e) {
                 h: 64
             },
             playButtonOffset: {
-                x: -8,
+                x: -10,
                 y: 0
             },
             playButtonAlpha: 1,
@@ -6836,7 +6836,7 @@ jukebox.Manager = function(e) {
             infoButtonAnim: new ig.Animation(new ig.AnimationSheet("media/graphics/game/ui/mainmenu/info.png", 54, 56), 0, [0, 1, 2]),
             infoButtonPos: {
                 x: 0,
-                y: 580
+                y: 585
             },
             infoButtonRect: {
                 x: -27,
@@ -6853,7 +6853,7 @@ jukebox.Manager = function(e) {
             moregamesButtonImage: new ig.Image("media/graphics/game/ui/mainmenu/moregames.png"),
             moregamesButtonPos: {
                 x: 41,
-                y: 575
+                y: 570
             },
             moregamesButtonRect: {
                 x: -31,
