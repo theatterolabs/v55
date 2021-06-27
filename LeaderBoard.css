@@ -15,6 +15,7 @@
 
 /* Facebook Login */
 .loginBtn {
+  font-family: volte;
   box-sizing: border-box;
   position: relative;
   /* width: 13em;  - apply for fixed size */
@@ -46,6 +47,7 @@
 
 
 .loginBtn--facebook {
+  font-family: volte;
   background-color: #4C69BA;
   background-image: linear-gradient(#4C69BA, #3B55A0);
   /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
