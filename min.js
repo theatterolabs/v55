@@ -38,7 +38,7 @@ var _STRINGS = {
         ],
         UI: {
             enter: "enter",
-            continue: "continue",
+            continue: "अगला कदम",
             owned: "owned",
             using: "using",
             skateboard: "skateboard",
@@ -6811,7 +6811,7 @@ jukebox.Manager = function(e) {
                 h: 64
             },
             playButtonOffset: {
-                x: -5,
+                x: -8,
                 y: 0
             },
             playButtonAlpha: 1,
@@ -6836,7 +6836,7 @@ jukebox.Manager = function(e) {
             infoButtonAnim: new ig.Animation(new ig.AnimationSheet("media/graphics/game/ui/mainmenu/info.png", 54, 56), 0, [0, 1, 2]),
             infoButtonPos: {
                 x: 0,
-                y: 578
+                y: 580
             },
             infoButtonRect: {
                 x: -27,
@@ -6853,7 +6853,7 @@ jukebox.Manager = function(e) {
             moregamesButtonImage: new ig.Image("media/graphics/game/ui/mainmenu/moregames.png"),
             moregamesButtonPos: {
                 x: 41,
-                y: 578
+                y: 575
             },
             moregamesButtonRect: {
                 x: -31,
@@ -7168,7 +7168,7 @@ jukebox.Manager = function(e) {
             control: null,
             pointer: null,
             init: function(e, t, i) {
-                this.parent(e, t, i), this.powerLevelGrad = ig.system.context.createLinearGradient(0, 0, 0, this.powerLevelRect.h), this.powerLevelGrad.addColorStop(0, "#cc1e1c"), this.powerLevelGrad.addColorStop(1, "#f59f2a"), this.pauseAnimUp = new ig.Animation(this.pauseSheet, .1, [0]), this.pauseAnimOver = new ig.Animation(this.pauseSheet, .1, [1]), this.pauseAnimDown = new ig.Animation(this.pauseSheet, .1, [2]), this.pauseAnim = this.pauseAnimUp, this.homeAnimUp = new ig.Animation(this.homeSheet, .1, [0]), this.homeAnimDown = new ig.Animation(this.homeSheet, .1, [1]), this.homeAnim = this.homeAnimUp, this.restartAnimUp = new ig.Animation(this.restartSheet, .1, [0]), this.restartAnimDown = new ig.Animation(this.restartSheet, .1, [1]), this.restartAnim = this.restartAnimUp, this.gameOverAnim = new ig.Animation(this.gameOverAnimSheet, .042, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], !1), this.pauseRect.x = ig.system.width - 58, this.homeRect.x = ig.system.width - 63, this.lifeRect.x = ig.system.width - 158, this.lifeCountPos.x = ig.system.width - 120, this.gameOverTitleRect.x = ig.system.width / 2 - this.gameOverTitleRect.w / 2, this.gameOverPanelRect.x = ig.system.width / 2 - this.gameOverPanelRect.w / 2, this.gameOverBgRect.x = ig.system.width / 2 - this.gameOverBgRect.w / 2, this.panelIconsRect.x = this.gameOverPanelRect.x + 150, this.panelIconsRect.y = this.gameOverPanelRect.y + 121, this.coinEndCountPos.x = this.panelIconsRect.x + 90, this.coinEndCountPos.y = this.panelIconsRect.y + 23, this.cookieEndCountPos.x = this.panelIconsRect.x + 1003, this.cookieEndCountPos.y = this.panelIconsRect.y + 1098, this.homeEndRect.x = ig.system.width / 2 - this.homeEndRect.w + 2000, this.restartEndRect.x = ig.system.width / 2 - this.restartEndRect.w / 2, this.pausedTitlePos.x = ig.system.width / 2 - this.pausedTitleImage.width / 2, this.happyAnim = new ig.Animation(this.happyAnimSheet, .084, [0, 1, 2, 3, 4], !0), this.tutorialTextRect.x = ig.system.width / 2 - this.tutorialTextRect.w / 2, this.happyBgRect.x = this.tutorialTextRect.x - this.happyBgRect.w / 2, this.happyBgRect.y = this.tutorialTextRect.y + this.tutorialTextRect.h / 2 - this.happyBgRect.h / 2, this.tutorialTextRect.w += this.happyBgRect.w / 2
+                this.parent(e, t, i), this.powerLevelGrad = ig.system.context.createLinearGradient(0, 0, 0, this.powerLevelRect.h), this.powerLevelGrad.addColorStop(0, "#cc1e1c"), this.powerLevelGrad.addColorStop(1, "#f59f2a"), this.pauseAnimUp = new ig.Animation(this.pauseSheet, .1, [0]), this.pauseAnimOver = new ig.Animation(this.pauseSheet, .1, [1]), this.pauseAnimDown = new ig.Animation(this.pauseSheet, .1, [2]), this.pauseAnim = this.pauseAnimUp, this.homeAnimUp = new ig.Animation(this.homeSheet, .1, [0]), this.homeAnimDown = new ig.Animation(this.homeSheet, .1, [1]), this.homeAnim = this.homeAnimUp, this.restartAnimUp = new ig.Animation(this.restartSheet, .1, [0]), this.restartAnimDown = new ig.Animation(this.restartSheet, .1, [1]), this.restartAnim = this.restartAnimUp, this.gameOverAnim = new ig.Animation(this.gameOverAnimSheet, .042, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], !1), this.pauseRect.x = ig.system.width - 58, this.homeRect.x = ig.system.width - 63, this.lifeRect.x = ig.system.width - 158, this.lifeCountPos.x = ig.system.width - 120, this.gameOverTitleRect.x = ig.system.width / 2 - this.gameOverTitleRect.w / 2, this.gameOverPanelRect.x = ig.system.width / 2 - this.gameOverPanelRect.w / 2, this.gameOverBgRect.x = ig.system.width / 2 - this.gameOverBgRect.w / 2, this.panelIconsRect.x = this.gameOverPanelRect.x + 150, this.panelIconsRect.y = this.gameOverPanelRect.y + 121, this.coinEndCountPos.x = this.panelIconsRect.x + 90, this.coinEndCountPos.y = this.panelIconsRect.y + 21, this.cookieEndCountPos.x = this.panelIconsRect.x + 1003, this.cookieEndCountPos.y = this.panelIconsRect.y + 1098, this.homeEndRect.x = ig.system.width / 2 - this.homeEndRect.w + 2000, this.restartEndRect.x = ig.system.width / 2 - this.restartEndRect.w / 2, this.pausedTitlePos.x = ig.system.width / 2 - this.pausedTitleImage.width / 2, this.happyAnim = new ig.Animation(this.happyAnimSheet, .084, [0, 1, 2, 3, 4], !0), this.tutorialTextRect.x = ig.system.width / 2 - this.tutorialTextRect.w / 2, this.happyBgRect.x = this.tutorialTextRect.x - this.happyBgRect.w / 2, this.happyBgRect.y = this.tutorialTextRect.y + this.tutorialTextRect.h / 2 - this.happyBgRect.h / 2, this.tutorialTextRect.w += this.happyBgRect.w / 2
             },
             ready: function() {
                 this.control = ig.game.getEntitiesByType(EntityGameControl)[0], this.pointer = ig.game.getEntitiesByType(EntityPointer)[0]
@@ -7280,7 +7280,7 @@ jukebox.Manager = function(e) {
                         i = this.tutorialTextRect.y + this.tutorialUIOffset.y,
                         n = this.tutorialTextRect.w,
                         s = this.tutorialTextRect.h;
-                    this.roundRect(e, t, i, n, s, 20, !0, !1), e.restore(), e.globalAlpha = 1, this.tutorialUIShowingFlag || this.drawText(), this.tutorialUIShowingFlag || this.tutorialUIHidingFlag || this.tutorialUITickFlag || this.tutorialUIFadeFlag || 0 != this.control.tutorialStage && 1 != this.control.tutorialStage && 2 != this.control.tutorialStage && 13 != this.control.tutorialStage || !(.5 < ig.system.clock.delta() - this.control.tutorialPausedTime) || (t = t + n - 20, i = i + s - 10, 1 < (n = this.tutorialTime % 2) && (n = 2 - n), n = .25 + .75 * n, e.save(), e.font = "12px mainfont, Helvetica, Verdana", e.translate(t, i), e.textAlign = "right", e.fillStyle = "rgba(255,255,255," + n + ")", e.fillText(_STRINGS.UI.continue, 0, 0), e.restore()), !this.tutorialUIShowingFlag && !this.tutorialUIHidingFlag && !this.tutorialUIFadeFlag && (3 == this.control.tutorialStage ? this.drawJumpInstructions() : 5 == this.control.tutorialStage ? this.drawRightInstructions() : 7 == this.control.tutorialStage || 9 == this.control.tutorialStage ? this.drawLeftInstructions() : 11 == this.control.tutorialStage && this.drawSlideInstructions()), e.globalAlpha = this.tutorialUIAlpha, this.happyBgImage.draw(this.happyBgRect.x + this.happyBgOffset.x + this.tutorialUIOffset.x, this.happyBgRect.y + this.happyBgOffset.y + this.tutorialUIOffset.y), this.happyAnim.draw(this.happyBgRect.x + this.happyBgOffset.x + this.tutorialUIOffset.x, this.happyBgRect.y + this.happyBgOffset.y + this.tutorialUIOffset.y), e.globalAlpha = 1
+                    this.roundRect(e, t, i, n, s, 20, !0, !1), e.restore(), e.globalAlpha = 1, this.tutorialUIShowingFlag || this.drawText(), this.tutorialUIShowingFlag || this.tutorialUIHidingFlag || this.tutorialUITickFlag || this.tutorialUIFadeFlag || 0 != this.control.tutorialStage && 1 != this.control.tutorialStage && 2 != this.control.tutorialStage && 13 != this.control.tutorialStage || !(.5 < ig.system.clock.delta() - this.control.tutorialPausedTime) || (t = t + n - 20, i = i + s - 10, 1 < (n = this.tutorialTime % 2) && (n = 2 - n), n = .25 + .75 * n, e.save(), e.font = "14px mainfont, Helvetica, Verdana", e.translate(t, i), e.textAlign = "right", e.fillStyle = "rgba(255,255,255," + n + ")", e.fillText(_STRINGS.UI.continue, 0, 0), e.restore()), !this.tutorialUIShowingFlag && !this.tutorialUIHidingFlag && !this.tutorialUIFadeFlag && (3 == this.control.tutorialStage ? this.drawJumpInstructions() : 5 == this.control.tutorialStage ? this.drawRightInstructions() : 7 == this.control.tutorialStage || 9 == this.control.tutorialStage ? this.drawLeftInstructions() : 11 == this.control.tutorialStage && this.drawSlideInstructions()), e.globalAlpha = this.tutorialUIAlpha, this.happyBgImage.draw(this.happyBgRect.x + this.happyBgOffset.x + this.tutorialUIOffset.x, this.happyBgRect.y + this.happyBgOffset.y + this.tutorialUIOffset.y), this.happyAnim.draw(this.happyBgRect.x + this.happyBgOffset.x + this.tutorialUIOffset.x, this.happyBgRect.y + this.happyBgOffset.y + this.tutorialUIOffset.y), e.globalAlpha = 1
                 }
             },
             drawText: function() {
