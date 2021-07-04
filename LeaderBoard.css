@@ -9,7 +9,7 @@
     position: relative;
     text-align: center;
     z-index: 10004;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 
@@ -282,7 +282,7 @@
 
 #ranking-wrapper-holder {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     overflow: scroll;
     background-image: linear-gradient(#fdfcf5, #a9f8f6);
     /*box-shadow: -5px 5px 10px rgba(0,0,0,0.3), 5px 0px 10px rgba(0,0,0,0.3);*/
